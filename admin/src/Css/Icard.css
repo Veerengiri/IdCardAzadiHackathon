@@ -1,0 +1,104 @@
+.ID-card {
+  height: 300px;
+  width: 520px;
+  /* background-color: gold; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-shadow: 0 0 50px 5px #35287293;
+  border-radius: 17px !important;
+  overflow: hidden;
+  background: #8d2de2ca;
+  border-top: 1.5px solid rgba(255, 255, 255, 0.993);
+  border-left: 1.5px solid rgba(255, 255, 255, 0.993);
+  /* background: linear-gradient(to right, #4b00e0, #8d2de2); */
+  background: var(--id);
+}
+.id-top {
+  width: 100%;
+  height: 25%;
+  /* background-color: crimson; */
+  /* background: linear-gradient(to right, #4b00e0, #8d2de2); */
+  background: var(--id);
+  color: white !important;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 7px 40px;
+}
+.id-top .logo img {
+  height: 50px;
+}
+.id-title h1 {
+  font-size: 20px;
+}
+
+.id-title h2 {
+  font-size: 18px;
+}
+.id-title h3 {
+  font-size: 14px;
+  font-weight: 200;
+}
+.id-info {
+  /* background-color: limegreen; */
+  height: 70%;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background-color: rgb(235, 231, 238);
+}
+.id-info .id-dp {
+  height: 140px;
+  border-radius: 50%;
+}
+.id-info .right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.id-info .right .id-field {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.id-info .right .id-field label {
+  font-size: 1rem;
+  font-weight: 550;
+}
+.id-info .right .id-field .val {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.ID {
+  width: 100%;
+  height: auto;
+  display: grid;
+  place-items: center;
+  gap: 25px;
+}
+@media (max-width: 600px) {
+  .ID {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .ID-card {
+    transform: scale(0.5);
+  }
+}
+@media (max-width: 400px) {
+  .ID-card {
+    transform: scale(0.6);
+  }
+}

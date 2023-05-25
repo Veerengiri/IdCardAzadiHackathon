@@ -1,0 +1,321 @@
+#dark-t {
+  --gold1: #ffc107;
+  --gold2: #deab10;
+  --gold3: rgba(255, 213, 0, 0.3);
+  --dark1: #1e283e;
+  --dark1: #141b2d;
+  --dark2: #1f2940;
+  --field: #1f2940;
+  --dark2-t: #1f2940e3;
+  --dark3: #25314d;
+  --color1d: #191923;
+  --color2d: whitesmoke;
+  --gray: rgb(240, 240, 240);
+  --gray2: rgb(236, 236, 236);
+  --tab-head: #2e2685;
+  --id: #2e2685;
+  --bc-w: rgba(245, 245, 245, 0.409);
+  --sup-lft: rgba(40, 31, 11, 0.375);
+  --p400: #4cceac;
+  --p400: #4cceac;
+}
+#light-t {
+  --gold1: rgb(0, 72, 255);
+  --gold2: rgb(17, 74, 219);
+  --gold3: rgba(0, 94, 255, 0.201);
+  --dark1: rgb(242, 240, 242);
+  /* --dark2: rgb(241, 245, 255); */
+  --dark2: rgb(213, 218, 231);
+  --field: rgb(244, 248, 255);
+  --dark2-t: white;
+  --dark3: rgb(255, 255, 255);
+  --color1d: white;
+  --color2d: #121212;
+  --gray: #303030;
+  --gray2: #252525;
+  --tab-head: rgb(0, 72, 255);
+  --id: #2e2685;
+  --bc-w: rgba(28, 28, 28, 0.409);
+  --sup-lft: rgb(3, 68, 220);
+}
+*::-webkit-scrollbar {
+  width: 2.5px;
+}
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px var(--gold3);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--gold1);
+  border-radius: 50px;
+
+  /* outline: 1px solid #e1af16; */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  /* border: 1px solid cyan; */
+}
+.btn {
+  outline: none !important;
+  border: none !important;
+  color: var(--color1d);
+  /* background-color: #f3bc18; */
+  background-color: var(--gold2);
+  padding: 13px 35px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 0.9rem;
+  position: relative;
+  font-weight: 600;
+  text-align: center;
+  /* top: 10px; */
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  z-index: 1;
+}
+.btn:hover {
+  background-color: var(--gold1);
+  /* transform: scale(1.05); */
+  /* padding: 20px 48px; */
+  /* animation: jump 0.7s infinite ease-in-out alternate; */
+}
+#lo {
+  background-color: crimson !important;
+  color: whitesmoke;
+}
+#lo:hover {
+  background-color: rgb(184, 11, 46) !important;
+}
+.submit {
+  color: whitesmoke !important;
+  width: fit-content !important;
+  background-color: rgb(9, 184, 47) !important;
+  padding: 13px 35px !important;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 0.9rem !important;
+  position: relative;
+  font-weight: 600 !important;
+  text-align: center;
+  top: 10px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer !important;
+  z-index: 1;
+}
+.submit:hover {
+  background-color: rgb(10, 157, 42) !important;
+  /* transform: scale(1.05); */
+  /* padding: 20px 48px; */
+  /* animation: jump 0.7s infinite ease-in-out alternate; */
+}
+#logo {
+  color: var(--color2d);
+  align-items: center;
+  display: flex;
+  gap: 7px;
+  flex: 1;
+  margin-left: 25px;
+
+  /* justify-content: center; */
+}
+#optn {
+  /* border: 2px solid crimson; */
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  display: flex;
+  margin: 5vh 0;
+  padding: 0 10vw;
+}
+#optn2{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  display: flex;
+  margin: 5vh 0;
+  padding: 0 10vw;
+}
+#tm {
+  border: none;
+  background: transparent;
+  outline: none;
+  color: var(--color2d);
+  transition: 0.3s ease-in-out;
+  margin: 0 15px;
+}
+#tm:hover {
+  color: var(--gold2);
+}
+
+#optn > * {
+  color: whitesmoke;
+  width: fit-content;
+  background-color: rgb(9, 62, 184) !important;
+  padding: 13px 35px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 0.9rem;
+
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+  cursor: pointer !important;
+  z-index: 1;
+}
+@media (max-width: 650px) {
+  #optn {
+    flex-direction: column;
+  }
+  .event-sec {
+    margin-top: 30px !important;
+    padding: 0 25px;
+  }
+  .e-title {
+    text-align: center;
+    font-size: 1.8rem !important;
+  }
+  .e-list {
+    margin: 0 !important;
+    padding: 10px;
+    gap: 25px !important;
+  }
+  .btn {
+    padding: 10px 22px;
+    border-radius: 3px;
+  }
+  #optn > * {
+    min-width: 250px;
+    justify-content: center;
+  }
+  #reader {
+    width: 90vw !important;
+  }
+  #logo {
+    margin: 12.5px 25px;
+    font-size: 1.5rem;
+  }
+  
+  #logo > * {
+    font-size: 2rem;
+    color: var(--gold2);
+  }
+  #ress,
+  #war {
+    width: 90% !important;
+  }
+  .a-info {
+    margin: 0 !important;
+    padding: 5vw !important;
+  }
+  .event-sec {
+    margin: 0 5vw !important;
+  }
+}
+.event-sec {
+  height: auto;
+  /* width: 100%; */
+  display: flex;
+  /* margin-bottom: ; */
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark2);
+  margin: 0 10vw;
+  border: 1.05px solid var(--gold2);
+  /* margin-top: 50px; */
+}
+.e-title {
+  color: var(--color2d);
+  font-size: 2.2rem;
+  font-weight: bolder;
+  margin: 17px 0;
+}
+.e-sub-title {
+  color: var(--color2d);
+  font-size: 1rem;
+  font-weight: 500;
+}
+#golden {
+  color: var(--gold2);
+}
+#ress {
+  text-align: center;
+  margin: auto;
+  padding: 0 10vw;
+  color: whitesmoke;
+  margin-bottom: 25px;
+  padding: 7px;
+  width: 80%;
+  background-color: rgb(9, 184, 47);
+}
+#war {
+  text-align: center;
+  margin: auto;
+  padding: 0 10vw;
+  color: whitesmoke;
+  margin-bottom: 25px;
+  padding: 7px;
+  text-transform: capitalize;
+  width: 80%;
+}
+#gbt {
+  color: whitesmoke;
+  width: fit-content;
+  padding: 13px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 0.9rem;
+
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+  cursor: pointer !important;
+  z-index: 1;
+  background-color: rgb(9, 184, 47) !important;
+}
+#checkdt form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 80%; */
+  padding: 5vh 25px;
+}
+#checkdt {
+  width: 90%;
+  margin: 0 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark2) !important;
+}
+#checkdt form input {
+  background: var(--field);
+  color: var(--color2d);
+  padding: 10px 15px;
+  border: 1px solid var(--color2d);
+  font-size: 1rem;
+  outline: none;
+}
+#checkdt form input::placeholder {
+  color: var(--color2d);
+}
+#ctrrrr {
+  width: 90%;
+  margin: 0 5vw;
+  text-align: center;
+
+  background-color: crimson;
+
+  /* background: var(--dark2); */
+}
+#colmn {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column !important;
+}

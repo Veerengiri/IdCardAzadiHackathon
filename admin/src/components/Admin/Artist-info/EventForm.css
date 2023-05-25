@@ -1,0 +1,124 @@
+.reset {
+  color: whitesmoke !important;
+  width: fit-content !important;
+  background-color: crimson !important;
+  padding: 13px 35px !important;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 0.9rem !important;
+  position: relative;
+  font-weight: 600 !important;
+  text-align: center;
+  top: 10px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer !important;
+  z-index: 1;
+}
+.reset:hover {
+  background-color: rgb(184, 11, 46) !important;
+  /* transform: scale(1.05); */
+  /* padding: 20px 48px; */
+  /* animation: jump 0.7s infinite ease-in-out alternate; */
+}
+.submit {
+  color: whitesmoke !important;
+  width: fit-content !important;
+  background-color: rgb(9, 184, 47) !important;
+  padding: 13px 35px !important;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 0.9rem !important;
+  position: relative;
+  font-weight: 600 !important;
+  text-align: center;
+  top: 10px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer !important;
+  z-index: 1;
+}
+.submit:hover {
+  background-color: rgb(10, 157, 42) !important;
+  /* transform: scale(1.05); */
+  /* padding: 20px 48px; */
+  /* animation: jump 0.7s infinite ease-in-out alternate; */
+}
+.wpp {
+  display: flex;
+  gap: 25px;
+}
+.nn2 {
+  display: flex !important;
+  width: 100% !important;
+  /* border: 3px solid rgb(64, 0, 255); */
+  align-items: center;
+  justify-content: space-around !important;
+  background: var(--dark2);
+  border: 1.05px solid transparent;
+  transition: border 0.3s ease-in-out !important;
+}
+.tx {
+  background: var(--dark2);
+  width: 220px;
+  color: var(--color2d);
+  flex-shrink: 0;
+  padding: 15px;
+}
+.input {
+  background: var(--dark1);
+  transition: border 0.3s ease-in-out !important;
+}
+.input .name,
+.msg {
+  border: 1.05px solid transparent !important;
+  transition: border 0.3s ease-in-out !important;
+}
+
+.nn2:hover,
+.input .name:hover,
+.msg:hover {
+  border-radius: 2px !important;
+  border: 1.05px solid var(--color2d) !important;
+}
+.input select {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 25px;
+  height: fit-content;
+  background: var(--dark2);
+  padding: 15px;
+  color: var(--color2d);
+  margin: 0;
+  font-family: 'Alegreya', sans-serif;
+  font-size: 1.05rem;
+  border: transparent;
+}
+.message {
+  padding: 0 10vw;
+}
+.team-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.team-info > * {
+  width: 100%;
+}
+.rdo {
+  background-color: var(--dark2);
+  width: 100%;
+  display: flex;
+  gap: 15px;
+}
+.rdo > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 10px;
+  margin-left: 15px;
+}
+#rd-btn {
+  width: fit-content;
+}

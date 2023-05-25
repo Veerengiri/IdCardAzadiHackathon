@@ -1,0 +1,56 @@
+#charts {
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#ch1,
+#ch2,
+#ch4,
+#ch5 {
+  width: 47%;
+  background-color: var(--dark2);
+  padding: 15px;
+  margin: 25px 15px;
+}
+#ch3 {
+  width: 100%;
+  background-color: var(--dark2);
+  padding: 15px;
+  margin: 15px;
+}
+#charts > * {
+  border: 1.05px solid var(--color2d);
+  border-radius: 5px;
+  overflow: hidden;
+}
+#charts > div > h1 {
+  color: var(--color2d);
+}
+#charts > div > p {
+  color: var(--gray);
+}
+@media (max-width: 1380px) {
+  #ch1,
+  #ch2,
+  #ch4,
+  #ch5 {
+    width: 45%;
+    background-color: var(--dark2);
+    padding: 15px;
+    margin: 25px 15px;
+  }
+}
+@media (max-width: 1000px) {
+  #ch1,
+  #ch2,
+  #ch4,
+  #ch5 {
+    width: 100%;
+    background-color: var(--dark2);
+    padding: 15px;
+    margin: 25px 15px;
+  }
+}

@@ -1,0 +1,176 @@
+.ID-card {
+  height: 300px;
+  width: 520px;
+  /* background-color: gold; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-shadow: 0 0 50px 5px #35287293;
+  border-radius: 17px !important;
+  overflow: hidden;
+  background: #8d2de2ca;
+  border-top: 1.5px solid rgba(255, 255, 255, 0.993);
+  border-left: 1.5px solid rgba(255, 255, 255, 0.993);
+  /* background: linear-gradient(to right, #4b00e0, #8d2de2); */
+  background: var(--id);
+}
+.id-top {
+  width: 100%;
+  height: 25%;
+  /* background-color: crimson; */
+  /* background: linear-gradient(to right, #4b00e0, #8d2de2); */
+  background: var(--id);
+  color: white !important;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 7px 40px;
+}
+.id-top .logo img {
+  height: 50px;
+}
+.id-title h1 {
+  font-size: 20px;
+  color: whitesmoke !important;
+}
+
+.id-title h2 {
+  font-size: 18px;
+  color: whitesmoke !important;
+}
+.id-title h3 {
+  font-size: 14px;
+  font-weight: 200;
+  color: whitesmoke !important;
+}
+.id-info {
+  /* background-color: limegreen; */
+  height: 70%;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(11, 11, 11);
+  gap: 30px;
+  background-color: rgb(235, 231, 238);
+}
+.id-info .id-dp {
+  height: 140px;
+  border-radius: 50%;
+}
+.id-info .right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.id-info .right .id-field {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.id-info .right .id-field label {
+  font-size: 1rem;
+  font-weight: 550;
+  color: rgb(11, 11, 11) !important;
+}
+.id-info .right .id-field .val {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgb(11, 11, 11) !important;
+}
+.ID {
+  width: 100%;
+  height: auto;
+  display: grid;
+  place-items: center;
+  gap: 25px;
+}
+
+.progresscontener {
+  /* background-color: rgb(242, 242, 242); */
+  color: black;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+.progressbar {
+  margin: 20px;
+  padding: 40px;
+  overflow-y: clip;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--field);
+  color: white;
+  border: 2px solid var(--gold2);
+  border-radius: 9px;
+  /* box-shadow: 0.5px 0.5px 15px 6px rgb(142, 142, 142); */
+  overflow: auto;
+}
+.approved {
+  margin-top: 0.3rem;
+}
+
+.roundfill {
+  background-color: rgb(214, 213, 213);
+  margin: 0 5px;
+  margin-right: 10px;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  z-index: 2;
+
+  /* transition: all 1.5s linear;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.5s; */
+}
+.progressbar div {
+  display: flex;
+}
+.progressbar p {
+  font-size: 2rem;
+  text-align: center;
+  margin: 5px 0px;
+  margin-bottom: 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.progressline {
+  height: 100px;
+  width: 0.6rem;
+  background-color: rgb(240, 240, 240);
+  margin: -10px 5px;
+  margin-left: 0.78rem;
+  z-index: 1;
+
+  /* transition: all 1.5s linear;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.5s; */
+}
+@media (max-width: 600px) {
+  .ID {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .ID-card {
+    transform: scale(0.5);
+  }
+}
+@media (max-width: 400px) {
+  .ID-card {
+    transform: scale(0.6);
+  }
+}

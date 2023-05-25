@@ -1,0 +1,143 @@
+/* .data,
+.data * {
+  border: 3px solid crimson;
+} */
+#ArtSignIn {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+#ArtSignIn .left {
+  width: 60%;
+  overflow: hidden;
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background-color: var(--sup-lft);
+}
+#ArtSignIn .left img {
+  width: 80%;
+}
+
+#ArtSignIn .right {
+  flex-shrink: 0 !important;
+  width: 40%;
+  display: grid;
+  place-items: center;
+}
+#ArtSignIn .right .data {
+  display: flex;
+  width: 84%;
+  min-width: 400px;
+  flex-direction: column;
+  gap: 13px;
+  color: var(--color2d) !important;
+}
+#ArtSignIn header {
+  font-size: 2rem;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+#ArtSignIn #logo {
+  font-size: 3rem !important;
+}
+#ArtSignIn .right .data h1 {
+  font-size: 2.5rem;
+}
+#ArtSignIn .right .data h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+#ArtSignIn .right .data h3 {
+  font-size: 0.9rem;
+  margin-bottom: 7px;
+}
+#ArtSignIn .right .data input {
+  font-size: 1.05rem;
+  background-color: var(--dark3);
+  padding: 13px 25px;
+  width: 100%;
+  border: 1.05px solid rgba(245, 245, 245, 0.4);
+  outline: none;
+  border-radius: 3px;
+  margin-bottom: 13px;
+  color: var(--color2d);
+}
+#ArtSignIn .right .data input::placeholder {
+  color: var(--color2d);
+}
+#ArtSignIn .right .data form .btn {
+  width: 100%;
+  border-radius: 3px;
+}
+#ArtSignIn .right .data .b-box {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+#ArtSignIn .right .data .b-box > * {
+  flex: 0.5;
+  font-size: 0.9rem !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+#ArtSignIn .right .data .b-box .btn:nth-child(1) {
+  /* background-color: #3b5998; */
+  background-color: #4267b2;
+  color: var(--color2d);
+}
+#ArtSignIn .right .data .b-box .btn:nth-child(2) {
+  /* background-color: #3b5998; */
+  background-color: #00b9ff;
+  color: var(--color2d);
+}
+#ArtSignIn .right .data p {
+  margin-top: 15px;
+  display: flex;
+  gap: 5px;
+}
+#ArtSignIn .right .data .gray {
+  color: var(--gray);
+}
+@media (max-width: 1100px) {
+  #ArtSignIn .left {
+    width: 50%;
+  }
+  #ArtSignIn .right {
+    width: 50%;
+  }
+}
+@media (max-width: 850px) {
+  #ArtSignIn .left {
+    display: none;
+  }
+  #ArtSignIn .right {
+    width: 100%;
+  }
+}
+@media (max-width: 650px) {
+  #ArtSignIn .b-box {
+    flex-direction: column;
+  }
+  #ArtSignIn .data {
+    width: 80% !important;
+    min-width: 300px !important;
+  }
+
+  #ArtSignIn .b-box > * {
+    width: 100%;
+  }
+}
+#ArtSignIn a {
+  text-decoration: underline;
+}
