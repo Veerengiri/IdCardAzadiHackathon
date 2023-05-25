@@ -1,0 +1,115 @@
+.a-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12.5px;
+}
+.a-info .i-field > * {
+  padding: 7.5px 15px;
+}
+.a-info .i-field {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  color: var(--color2d);
+  border: 1.05px solid var(--bc-w);
+  border-radius: 7px;
+  overflow: hidden;
+
+  width: 100%;
+  /* background: crimson; */
+  background: var(--dark3);
+}
+
+.a-info .i-field .i-l {
+  flex-shrink: 0;
+  min-width: 180px;
+  display: flex;
+}
+.a-info .i-field .i-r {
+  border-left: 1.05px solid var(--bc-w);
+  background-color: var(--dark2) !important;
+  /* background-color: lime; */
+  text-transform: capitalize;
+  width: 100%;
+}
+.ol-l {
+  flex: 1;
+}
+.a-info .i-field .i-r {
+  font-size: 0.9rem;
+  letter-spacing: 1.2px;
+  color: var(--gray2);
+}
+.i-r-dp img {
+  height: 20vh !important;
+  min-width: 100px;
+}
+.i-r-ad img {
+  height: 30vh;
+  min-width: 300px;
+}
+.i-r-s img {
+  max-height: 12vh !important;
+  min-width: 100px;
+}
+@media (max-width: 1000px) {
+  .i-r-ad img {
+    /* height: 30vh !important; */
+    min-width: 300px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 760px) {
+  .a-info .i-field {
+    flex-direction: column;
+  }
+  .i-r-ad img {
+    /* height: 30vh !important; */
+    min-width: 240px;
+    width: 100%;
+    height: auto;
+  }
+}
+.sm {
+  background: none;
+  border: 1.5px solid var(--color2d);
+  border-radius: 3px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin: auto; */
+  /* margin-bottom: 20px; */
+  padding: 7px 35px;
+  gap: 7.5px;
+  color: var(--color2d);
+  border-color: var(--gold2);
+  transition: 0.45s all ease-in-out;
+}
+.sm:hover {
+  background-color: var(--gold2);
+  /* border-radius: 9px; */
+  color: var(--color3d);
+
+  /* border: 0px; */
+  /* font-weight: bold; */
+}
+.m-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.m-info > div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
